@@ -1,0 +1,63 @@
+.login-form {
+  width: 25%;
+  margin: 150px auto;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.mat-raised-button {
+  float: right !important;
+  border-radius: 25px;
+}
+
+.cover {
+  background-image: url('/assets/images/login.png');
+  background-size: cover;
+  height: 93vh;
+  display: flex;
+}
+
+.reset-pass {
+  font-size: 12px;
+  cursor: pointer;
+  color: #d40f00 ;
+}
+
+mat-card {
+  background: #0000;
+  box-shadow: unset !important;
+  padding: 30px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Dosis', sans-serif;
+  color: #3f51b5;
+  width: fit-content;
+  margin: 40px auto;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.mat-drawer-content {
+  background: #000 !important;
+  // background-image: url('https://www.pearson.com/us/content/dam/one-dot-com/one-dot-com/ca/en/images/Lucy_Vigrass_achievement_RGB.jpg') !important;
+  background-size: cover;
+}
+
+.login-form {
+  background: #fff;
+  height: fit-content;
+  padding-bottom: 37px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 34px;
+  border: #138a7fa3 dashed;
+  -webkit-box-shadow: 5px 15px 65px -20px rgba(0, 137, 124, 0.61);
+  -moz-box-shadow: 5px 15px 65px -20px rgba(0, 137, 124, 0.61);
+  box-shadow: 5px 15px 65px -20px rgba(0, 137, 124, 0.61);
+  height: -webkit-fit-content;
+}

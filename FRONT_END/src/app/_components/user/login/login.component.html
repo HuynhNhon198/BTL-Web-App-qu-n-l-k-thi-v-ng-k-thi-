@@ -1,0 +1,37 @@
+<!-- <div class="container-component" > -->
+<div class="cover">
+    <div class="login-form">
+      <h4>ExamReg - Quản Lý Thi</h4>
+      <form [@EnterLeave]="'flyIn'" (submit)="logIn(postForm)" ngNativeValidate #postForm="ngForm">
+        <mat-card>
+          <mat-form-field>
+            <input matInput placeholder="Tên Đăng Nhập" name="username" ngModel required minlength="1" autofocus
+              [(ngModel)]="username">
+          </mat-form-field>
+          <br>
+          <mat-form-field style="color: #0055c085;">
+            <input #pass matInput [type]="hide ? 'password' : 'text'" placeholder="Mật Khẩu" name="password" ngModel
+              required minlength="1">
+            <mat-icon style="cursor: pointer;" matSuffix (mouseenter)="hide = !hide" (mouseleave)="hide = !hide">
+              {{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </mat-form-field>
+          <br>
+          <mat-list-item>
+            <span class="reset-pass" (click)="resetPass()">QUÊN MẬT KHẨU</span>
+
+            <span class="example-spacer"></span>
+            <button mat-raised-button color="primary" style="margin-top: 17px;" type="submit">
+              <i class="material-icons">arrow_forward</i>
+            </button>
+          </mat-list-item>
+
+        </mat-card>
+      </form>
+    </div>
+
+</div>
+<div class="add">
+  <button mat-fab color="warn" (click)="openMail()" title="Liên Hệ"><i
+      class="material-icons">mail_outline</i></button>
+</div>
+<!-- </div> -->
